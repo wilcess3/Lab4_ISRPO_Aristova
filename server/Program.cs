@@ -14,5 +14,30 @@ class Program
         Console.WriteLine("2 — Показать группу");
         Console.WriteLine("3 — Показать дату");
         Console.WriteLine("4 — Выход");
+        Console.Write("Ваш выбор: ");
+
+        string vibor = Console.ReadLine();
+
+        if (vibor == "1")
+        {
+            Console.WriteLine("ФИО: Аристова А.А");
+        }
+
+        if (vibor == "2")
+        {
+            Console.WriteLine("Группа: ИСП-241");
+        }
+
+        if (vibor == "3")
+        {
+            Console.WriteLine("Дата: " + DateTime.Now);
+        }
+
+        if (vibor == "4")
+        {
+            Console.WriteLine("Выход...");
+        }
+
+        Console.ReadKey();
     }
 }
